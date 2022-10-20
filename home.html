@@ -20,13 +20,30 @@
             <p class="carrier-info-text">ACCURATE CARRIER INFO</p>
         </div>
         <ul class="dashboard-uls">
-            <li><img src="assets/icons/dashboard.png" alt="">&nbsp; <span>Dashboard</span> </li>
-            <li><img src="assets/icons/Lookup.png" alt="">&nbsp; <span>Students</span> </li>
-            <li><img src="assets/icons/Dailyusage.png" alt="">&nbsp; <span>Teachers</span> </li>
-            <li><img src="assets/icons/Files.png" alt="">&nbsp; <span>Income</span> </li>
-            <li><img src="assets/icons/Integrations.png" alt="">&nbsp; <span>Schools</span> </li>
-            <li><img src="assets/icons/Lookup.png" alt="">&nbsp; <span>Help</span> </li>
-            <li><img src="assets/icons/dashboard.png" alt="">&nbsp; <span>Setting</span> </li>
+            <li><img src="assets/icons/dashboard.png" alt="">&nbsp; &nbsp;<span>Dashboard</span> </li>
+            <li><img src="assets/icons/Lookup.png" alt="">&nbsp; &nbsp;<span>Lookup</span></li>
+            <li><img src="assets/icons/Dailyusage.png" alt="">&nbsp; &nbsp;<span>Files</span> </li>
+            <li>
+                <div class="faq">
+                    <div class="logs">
+                        <div><img src="assets/icons/log-svgrepo-com 1.png" alt="">&nbsp; &nbsp;<span>Logs</span></div>
+                        <div><img src="assets/icons/Vector 97.png" alt=""></div>
+                    </div>
+                    <div class="answer">
+                        <ul>
+                            <li><img src="assets/icons/Single.png" alt="">&nbsp;<span
+                                    class="single-lookup-size">Single/Bulk Lookup</span>
+                            </li>
+                            <li><img src="assets/icons/Dailyusage.png" alt="">&nbsp;<span
+                                    class="single-lookup-size">Daily Usages</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li><img src="assets/icons/Buy.png" alt="">&nbsp; &nbsp;<span>Buy Credits</span> </li>
+            <li><img src="assets/icons/Integrations.png" alt="">&nbsp; &nbsp;<span>Integrations</span> </li>
+            <li><img src="assets/icons/Profile.png" alt="">&nbsp; &nbsp;<span>My Profile</span> </li>
         </ul>
     </div>
     <div class="container">
@@ -139,15 +156,22 @@
             </div>
         </div>
     </div>
-
     <script>
+        const faqs = document.querySelectorAll(".faq");
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                faq.classList.toggle("active");
+            })
+        })
+    </script>
+    <!-- <script>
         const accordion = document.getElementsByClassName('contentBx');
         for (i = 0; i < accordion.length; i++) {
             accordion[i].addEventListener('click', function () {
                 this.classList.toggle('active')
             })
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
