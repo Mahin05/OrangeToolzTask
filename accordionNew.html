@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="user-images-data">
+                <img src="assets/icons/unsplash_6W4F62sN_yIprofileImage.png" alt="">
+                <p>Alexa Jui</p>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, similique. Sequi quibusdam quos
+                    fugiat tempore distinctio non error veniam exercitationem.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+
+</html>
