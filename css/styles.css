@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', 'sans-serif';
+    /* font-family: 'Poppins'; */
+
 }
 
+html,
 body {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 a {
@@ -291,6 +294,7 @@ td {
 
 .lookup {
     font-weight: 900;
+    font-size: 20px;
 }
 
 .brand-name {
@@ -310,7 +314,7 @@ td {
 }
 
 .brand-logo {
-    margin-left: 106px;
+    margin-left: 118px;
 }
 
 /* Side accordion start*/
@@ -380,10 +384,15 @@ p {
     text-align: center;
 }
 
+.profile--card h2 {
+    font-weight: 500;
+}
+
 .profile--card p {
     color: #7D7D7E;
     font-weight: 400;
     margin-top: 8px;
+    font-size: 12px;
 }
 
 .profile--card {
@@ -457,6 +466,7 @@ p {
 .main-cards-div h2 {
     margin-top: 65px;
     margin-left: 8px;
+
 }
 
 .container .content {
@@ -512,10 +522,11 @@ p {
 
 .second-content {
     background: white;
-    margin-top: 40px;
+    margin-top: 30px;
     width: 1100px;
     margin-left: 20px;
-    min-height: 60vh;
+    min-height: 80vh;
+    border-radius: 10px;
 }
 
 .content-nav {
@@ -533,6 +544,8 @@ p {
     position: relative;
     text-decoration: none;
     padding: 0 10px;
+    text-decoration: none;
+    color: black;
 }
 
 .content-nav a::after {
@@ -561,6 +574,130 @@ hr.new4 {
     border: 2px solid #F2F2F4;
 }
 
+/* Toggle swtiches start */
+.sliders-switches {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.slider-texts p {
+    text-align: start;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: #FF7901;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+hr.new5 {
+    border: 2px solid #F2F2F4;
+    width: 750px;
+    margin-left: 178px;
+    margin-top: 30px;
+}
+
+.single-swtich-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 330px;
+    margin-left: 143px;
+    margin-top: 20px;
+}
+
+form input {
+    border: 1px solid #F2F2F4;
+    border-radius: 10px;
+    width: 350px;
+    height: 60px
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 128px;
+    margin-top: 20px;
+}
+
+.form-div {
+    margin-left: 30px;
+}
+
+.save-btn {
+    border: none;
+    background: #FF7901;
+    box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
+    border-radius: 5px;
+    padding: 10px 16px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+/* Toggle swtiches end */
 /* Content second part nav end*/
 
 /* Media query for pc start */
@@ -668,22 +805,71 @@ hr.new4 {
         text-align: center;
         margin-bottom: 10px;
     }
-    .second-main-content{
+
+    .second-main-content {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .second-content{
+
+    .second-content {
         height: 500px;
         width: 600px;
         margin-left: 0;
     }
-    .content-nav{
+
+    .content-nav {
         width: 400px;
         margin-left: 100px;
         font-size: 7px;
         text-align: center;
     }
+
+    hr.new5 {
+        border: 2px solid #F2F2F4;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    form {
+        flex-direction: column;
+        margin-left: 128px;
+        margin-top: 20px;
+    }
+
+    .sliders-switches {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 500px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .single-swtich-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 330px;
+        margin-left: 38px;
+        margin-top: 20px;
+    }
+
+    .text-paragraph p {
+        margin-left: -13px;
+    }
+
+    form {
+        flex-direction: column;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+
+    .second-content {
+        min-height: 800px;
+    }
+
 }
 
 /* Media query for tablet end */
@@ -829,15 +1015,90 @@ hr.new4 {
         margin-top: 2vh;
         margin-right: 10px;
     }
-    .second-content{
+
+    .second-content {
         width: 300px;
         margin-left: 0;
+        min-height: 670px;
     }
-    .content-nav{
+
+    .content-nav {
         width: 295px;
         margin-left: 0px;
         font-size: 7px;
         text-align: center;
+    }
+
+    .slider-texts p {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .text-paragraph p {
+        margin-left: 0;
+    }
+
+    .sliders-switches {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    hr.new5 {
+        border: 2px solid #F2F2F4;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .single-swtich-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 200px;
+        margin-left: 45px;
+        margin-top: 20px;
+    }
+
+    form input {
+        border: 1px solid #F2F2F4;
+        border-radius: 10px;
+        width: 35px;
+        height: 60px
+    }
+
+    form {
+        flex-direction: column;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+
+    .form-div {
+        /* margin-left: 30px; */
+        margin-top: 10px;
+    }
+
+    .form-div label {
+        font-size: 10px;
+    }
+
+    .form-div input {
+        width: 150px;
+        height: 40px;
+    }
+
+    .save-btn {
+        border: none;
+        background: #FF7901;
+        box-shadow: 0px 20px 50px rgba(255, 121, 1, 0.3);
+        border-radius: 5px;
+        padding: 10px 16px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 
 }

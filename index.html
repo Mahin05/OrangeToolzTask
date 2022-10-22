@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Joan&family=Merriweather:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>User Panel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
 </head>
 
 <body>
@@ -120,6 +121,63 @@
                     <a href="#hh">Auto Recharge Settings</a>
                 </div>
                 <hr class="new4">
+                <div class="sliders-switches">
+                    <div class="swtiches">
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="slider-texts">
+                        <p>Notify me when list verification completes</p>
+                        <p>Notify me when list export completes</p>
+                        <p>Notify me when list verification result is about to expire</p>
+                    </div>
+                </div>
+                <hr class="new5">
+                <div class="form-section">
+                    <div class="single-swtich-slide">
+                        <div class="swtiches">
+                            <div>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="slider-texts text-paragraph">
+                            <p>Receive Low Credits Email</p>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <form>
+                            <div class="form-div">
+                                <label for="fname">Send Email to<span>*</span></label> <br>
+                                <input type="text" placeholder="alexajui@gmail.com" id="fname" name="fname">
+                            </div>
+                            <div class="form-div">
+                                <label for="fname">When credits are less than<span>*</span></label> <br>
+                                <input type="text" value="50" id="fname" name="fname">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="new5">
+                <button class="save-btn">Save Changes</button>
             </div>
         </div>
     </div>
