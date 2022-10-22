@@ -26,12 +26,12 @@
             <li><img src="assets/icons/Lookup.png" alt="">&nbsp; &nbsp;<span>Lookup</span></li>
             <li><img src="assets/icons/Dailyusage.png" alt="">&nbsp; &nbsp;<span>Files</span> </li>
             <li>
-                <div class="faq">
+                <div class="log">
                     <div class="logs">
                         <div><img src="assets/icons/log-svgrepo-com 1.png" alt="">&nbsp; &nbsp;<span>Logs</span></div>
                         <div class="mouseover-in-icon"><img src="assets/icons/Vector 97.png" alt=""></div>
                     </div>
-                    <div class="answer">
+                    <div class="new-log">
                         <ul>
                             <li><img src="assets/icons/Single.png" alt="">&nbsp;<span
                                     class="single-lookup-size">Single/Bulk Lookup</span>
@@ -183,10 +183,10 @@
         </div>
     </div>
     <script>
-        const faqs = document.querySelectorAll(".faq");
-        faqs.forEach(faq => {
-            faq.addEventListener('click', () => {
-                faq.classList.toggle("active");
+        const logs = document.querySelectorAll(".log");
+        logs.forEach(log => {
+            log.addEventListener('click', () => {
+                log.classList.toggle("active");
             })
         })
     </script>

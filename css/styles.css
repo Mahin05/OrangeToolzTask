@@ -255,13 +255,13 @@ section {
     margin: 2rem 0rem;
 }
 
-.answer {
+.new-log {
     max-height: 0;
     overflow: hidden;
     transition: 0.1s;
 }
 
-.faq.active .answer {
+.log.active .new-log {
     max-height: 300px;
 
 }
@@ -858,7 +858,7 @@ form {
         margin-left: 28%;
     }
 
-    .answer {
+    .new-log {
         margin-right: 13%;
     }
 
