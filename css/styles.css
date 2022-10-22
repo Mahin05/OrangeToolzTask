@@ -504,6 +504,65 @@ p {
 
 /* First card section end */
 
+/* Content second part nav start*/
+.second-main-content {
+    background: #f1f1f1;
+
+}
+
+.second-content {
+    background: white;
+    margin-top: 40px;
+    width: 1100px;
+    margin-left: 20px;
+    min-height: 60vh;
+}
+
+.content-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 600px;
+    margin-left: 260px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.content-nav a {
+    margin-top: 30px;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.content-nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #FF7901;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -14px;
+}
+
+.content-nav a:hover {
+    color: #FF7901;
+}
+
+.content-nav a:hover:after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+*/
+
+/* Thick red border */
+hr.new4 {
+    border: 2px solid #F2F2F4;
+}
+
+/* Content second part nav end*/
+
 /* Media query for pc start */
 @media screen and (max-width:1050px) {
     .side-menu li {
@@ -609,6 +668,22 @@ p {
         text-align: center;
         margin-bottom: 10px;
     }
+    .second-main-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second-content{
+        height: 500px;
+        width: 600px;
+        margin-left: 0;
+    }
+    .content-nav{
+        width: 400px;
+        margin-left: 100px;
+        font-size: 7px;
+        text-align: center;
+    }
 }
 
 /* Media query for tablet end */
@@ -646,9 +721,11 @@ p {
     .p-color-amount {
         font-size: 10px;
     }
-    .container{
-        overflow:scroll;
+
+    .container {
+        overflow: scroll;
     }
+
     .container .header {
         position: fixed;
         top: 0;
@@ -718,6 +795,7 @@ p {
         margin-top: 4vh;
         margin-left: 10px;
     }
+
     .main-cards-div {
         background: white;
         height: 334px;
@@ -736,50 +814,32 @@ p {
     .different-credit--card {
         margin-top: 10px;
     }
+
     .profile--card {
         width: 300px;
     }
-    .profile--card img{
+
+    .profile--card img {
         margin-left: 100px;
     }
+
     .main-cards-div {
         height: 700px;
         width: 300px;
         margin-top: 2vh;
         margin-right: 10px;
     }
+    .second-content{
+        width: 300px;
+        margin-left: 0;
+    }
+    .content-nav{
+        width: 295px;
+        margin-left: 0px;
+        font-size: 7px;
+        text-align: center;
+    }
+
 }
 
 /* Media query for mobile end */
-
-/* Content second part nav start*/
-/* .navu{
-    height: 100vh;
-    width: 70vw;
-    min-width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.navu a{
-    position: relative;
-    text-decoration: none;
-    padding: 0 10px;
-}
-.navu a::after{
-    content: "";
-    position: absolute;
-    background-color: #000000;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-}
-.navu a:hover{
-    color: black;
-}
-.navu a:hover:after{
-    width: 100%;
-    transition: 0.3s;
-} */
-/* Content second part nav end*/
